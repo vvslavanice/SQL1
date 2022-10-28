@@ -1,0 +1,15 @@
+'''
+task2
+'''
+
+SELECT first_name AS FirstName, last_name AS LastName FROM employees;
+
+SELECT DISTINCT department_id FROM employees;
+
+SELECT FirstName FROM employees ORDER BY FirstName ASC;
+
+SELECT FirstName, LastName, salary, salary*0,12 AS 'PF' FROM employees;
+
+SELECT MIN(salary), MAX(salary) from employees;
+
+SELECT LastName, ROUND(salary/12, 2) from employees;
