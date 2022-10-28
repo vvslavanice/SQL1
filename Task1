@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS Person(ID INTEGER, Name TEXT, Age INTEGER);
+
+ALTER TABLE Person RENAME TO Childrens;
+
+Alter Table Childrens ADD Action TEXT;
+
+INSERT INTO Employees VALUES(1, 'My name 1', 11, 'Study');
+
+INSERT INTO Employees VALUES(2, 'My name 2', 12, 'Hobby');
+
+INSERT INTO Employees VALUES(3, 'My name 3', 13, 'Study');
+
+UPDATE Childrens SET ID=3, Name='Newnamex3', Age=14, Action='Hobby' WHERE ID=3
+
+DELETE FROM Childrens WHERE ID=2;
